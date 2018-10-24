@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="LoginPageTesting">
+    <test name="SmokeTest">
+        <parameter name="login" value="amptest3@ex.ua"/>
+        <parameter name="password" value="password1"/>
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="blipicStage.testClasses.LoginTestClass"/>
+        </classes>
+    </test>
+</suite>
