@@ -39,6 +39,10 @@ public class LoginTestClass {
         driver.get(LoginPage.url);
 
     }
+    @AfterMethod
+    public void refreshSystem(){
+        loginPage.clearFields();
+    }
 
     @AfterClass
     protected void TearDown(){
@@ -46,7 +50,11 @@ public class LoginTestClass {
             driver.quit();
         }
     }
-
+    @Test
+    public void loginWithEmptyFields(){
+        loginPage.clickLoginButton();
+        Assert.assertTrue(loginPage.checkErrorMessage());
+    }
 
     @Parameters({"login", "password"})
     @Test
@@ -57,16 +65,35 @@ public class LoginTestClass {
         loginPage.clickLoginButton();
         wait.until(ExpectedConditions.urlMatches(MainPage.url));
         Assert.assertEquals(driver.getCurrentUrl(), MainPage.url);
+        driver.navigate().back();
     }
 
+    @Parameters({"login", "password"})
     @Test
-    public  void loginWithInvalidEmail(){
-
+    public  void loginWithInvalidEmail(String login, String password){
+        loginPage.inputLogin(login.replace("ua", "us"));
+        loginPage.inputPassword(password);
+        loginPage.clickLoginButton();
+        Assert.assertTrue(loginPage.checkErrorMessage());
     }
-
+    @Parameters({"login", "password"})
+    @Test()
+    public void loginWithInvalidPassword(String login, String password){
+        loginPage.inputLogin(login);
+        loginPage.inputPassword(password + " ");
+        loginPage.clickLoginButton();
+        Assert.assertTrue(loginPage.checkErrorMessage());
+        loginPage.clearFields();
+        loginPage.inputLogin(login);
+        loginPage.inputPassword(" " + password);
+        Assert.assertTrue(loginPage.checkErrorMessage());
+    }
+    @Parameters("login")
     @Test
-    public void loginWithInvalidPassword(){
-        System.out.println("hello");
+    public void loginWithEmptyPassword(String login){
+        loginPage.inputLogin(login);
+        loginPage.clickLoginButton();
+        Assert.assertTrue(loginPage.checkErrorMessage());
     }
 
 

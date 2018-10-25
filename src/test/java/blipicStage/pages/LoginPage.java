@@ -15,7 +15,7 @@ public class LoginPage {
         this.driver = driver;
     }
 
-    @FindBy(tagName = "button")
+    @FindBy(xpath = "//button[@type='submit']")
     private WebElement loginBtn;
 
     @FindBy(name = "authLogin")
@@ -30,6 +30,8 @@ public class LoginPage {
     @FindBy(css = "input.ng-touched:nth-child(2)")
     private WebElement activCodeField;
 
+    @FindBy(xpath = "//div[@class='alert alert-danger']//span[contains(text(),'Incorrect login or password.')]")
+    public WebElement errorMessage;
 
     public void inputLogin(String login){
         loginField.sendKeys(login);
@@ -41,6 +43,13 @@ public class LoginPage {
 
     public void clickLoginButton(){
         loginBtn.click();
+    }
+    public boolean checkErrorMessage(){
+        return errorMessage.isDisplayed() && errorMessage.getText().equals("Incorrect login or password.");
+    }
+    public void clearFields(){
+        loginField.clear();
+        passwordField.clear();
     }
 
     public void clickForgotPassword(){
