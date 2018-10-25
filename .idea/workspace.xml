@@ -1,16 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1f3a2160-f91a-42c9-8fac-0176b3463e92" name="Default Changelist" comment="New test methods">
-      <change afterPath="$PROJECT_DIR$/src/test/java/blipicStage/testClasses/MainPageTestClass.java" afterDir="false" />
+    <list default="true" id="1f3a2160-f91a-42c9-8fac-0176b3463e92" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/blipicStage/pages/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/blipicStage/pages/LoginPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/blipicStage/pages/MainPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/blipicStage/pages/MainPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/blipicStage/testClasses/LoginTestClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/blipicStage/testClasses/LoginTestClass.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/blipicStage/pages/LoginPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/blipicStage/pages/LoginPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/blipicStage/pages/MainPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/blipicStage/pages/MainPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/blipicStage/testClasses/LoginTestClass.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/blipicStage/testClasses/LoginTestClass.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -39,7 +31,7 @@
         <counts>
           <entry key="LoginPageTesting" value="95" />
           <entry key="dummy" value="41" />
-          <entry key="java" value="6375" />
+          <entry key="java" value="6376" />
           <entry key="properties" value="85" />
           <entry key="txt" value="37" />
           <entry key="xml" value="305" />
@@ -47,7 +39,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="6375" />
+          <entry key="JAVA" value="6376" />
           <entry key="PLAIN_TEXT" value="78" />
           <entry key="Properties" value="85" />
           <entry key="XML" value="400" />
@@ -100,8 +92,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/blipicStage/pages/LoginPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="644">
-              <caret line="49" column="30" lean-forward="true" selection-start-line="49" selection-start-column="30" selection-end-line="49" selection-end-column="30" />
+            <state relative-caret-position="469">
+              <caret line="58" selection-start-line="58" selection-end-line="58" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -289,6 +281,32 @@
               <item name="UkrNetTest" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="UkrNetTest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="UkrNetTest" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="UkrNetTest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="UkrNetTest" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+              <item name="test-classes" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="UkrNetTest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="UkrNetTest" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+              <item name="test-classes" type="462c0819:PsiDirectoryNode" />
+              <item name="blipicStage" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="UkrNetTest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="UkrNetTest" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+              <item name="test-classes" type="462c0819:PsiDirectoryNode" />
+              <item name="blipicStage" type="462c0819:PsiDirectoryNode" />
+              <item name="testClasses" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -297,7 +315,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file:///home/dmytroqa/IdeaProjects/edu/UkrNetTest/pom.xml" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540464901883" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540465283629" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -398,7 +416,14 @@
       <option name="project" value="LOCAL" />
       <updated>1540394628430</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="New test methods">
+      <created>1540464928785</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1540464928785</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -444,7 +469,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1984" y="-11" width="1857" height="1092" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23991156" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -455,12 +479,12 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32985386" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.2583682" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.2583682" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39958158" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3294979" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.3294979" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.3294979" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.3294979" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.32845187" />
@@ -690,8 +714,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/blipicStage/pages/LoginPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="644">
-          <caret line="49" column="30" lean-forward="true" selection-start-line="49" selection-start-column="30" selection-end-line="49" selection-end-column="30" />
+        <state relative-caret-position="469">
+          <caret line="58" selection-start-line="58" selection-end-line="58" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
