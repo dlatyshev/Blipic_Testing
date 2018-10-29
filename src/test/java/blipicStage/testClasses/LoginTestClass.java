@@ -115,9 +115,53 @@ public class LoginTestClass {
 
     @Parameters("login")
     @Test
-    public void sendNewPassword(String login){
+    public void sendNewPasswordWithEmptyPassField(String login){
+        loginPage.clickForgotPassword();
         loginPage.enterUserNameOrEmail(login);
+        loginPage.clickSendNewPasswordBtn();
+        Assert.assertTrue(loginPage.checkInvalidPasswordMessage());
     }
+
+    @Test
+    public void sendNewPasswordWithEmptyFields(){
+        loginPage.clickForgotPassword();
+        loginPage.clickSendNewPasswordBtn();
+        Assert.assertTrue(loginPage.checkEmptyFieldsErrorMessage());
+    }
+    @Parameters({"login", "newPassword"})
+    @Test
+    public void sendNewPasswordWithEmptyConfirmPassword(String login, String newPassword){
+        loginPage.clickForgotPassword();
+        loginPage.enterUserNameOrEmail(login);
+        loginPage.enterNewPassword(newPassword);
+        loginPage.clickSendNewPasswordBtn();
+        Assert.assertTrue(loginPage.checkPasswordDoNotMatchErrorMessage());
+    }
+
+    @Parameters({"login", "newPassword"})
+    @Test
+    public void sendNewPasswordWithInvalidConfirmPassword(String login, String newPassword){
+        loginPage.clickForgotPassword();
+        loginPage.enterUserNameOrEmail(login);
+        loginPage.enterNewPassword(newPassword);
+        loginPage.confirmNewPassword(newPassword + " ");
+        loginPage.clickSendNewPasswordBtn();
+        Assert.assertTrue(loginPage.checkPasswordDoNotMatchErrorMessage());
+    }
+
+    @Parameters({"login", "newPassword"})
+    @Test
+    public void sendNewPassword(String login, String newPassword){
+        loginPage.clickForgotPassword();
+        loginPage.enterUserNameOrEmail(login);
+        loginPage.enterNewPassword(newPassword);
+        loginPage.confirmNewPassword(newPassword);
+        loginPage.clickSendNewPasswordBtn();
+        Assert.assertTrue(loginPage.checkVerificationCodeMessage());
+    }
+
+
+
 
 
 

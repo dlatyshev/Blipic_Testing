@@ -6,6 +6,7 @@
         <parameter name="login" value="amptest3@ex.ua"/>
         <parameter name="password" value="password1"/>
         <parameter name="browser" value="chrome"/>
+        <parameter name="newPassword" value="password2"/>
         <classes>
             <class name="blipicStage.testClasses.LoginTestClass"/>
         </classes>

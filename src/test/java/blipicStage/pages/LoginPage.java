@@ -4,6 +4,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.testng.annotations.Test;
 
 
 public class LoginPage {
@@ -60,6 +61,19 @@ public class LoginPage {
     @FindBy(xpath = "//h4[@class='left']")
     public WebElement existingAccountHeader;
 
+    @FindBy(xpath = "//div[@class='alert ng-scope alert-danger']//span[@class='ng-binding'][contains(text(),'Invalid password value')]")
+    private WebElement invalidPasswordMessage;
+
+    @FindBy(xpath = "//div[@class='alert ng-scope alert-danger']//span[@class='ng-binding'][contains(text(),'Error. Please type your username or email.')]")
+    private WebElement emptyFieldsErrorMessage;
+
+    @FindBy(xpath = "//div[@class='alert ng-scope alert-danger']//span[@class='ng-binding'][contains(text(),'Passwords do not match')]")
+    private WebElement passwordsDoNotMatchErrorMessage;
+
+    @FindBy(xpath = "//div[@class='alert ng-scope alert-success']//span[contains(text(),'Check your mailbox for verification code.')]")
+    private WebElement verificationCodeMessage;
+
+
     public void enterLogin(String login){
         loginField.sendKeys(login);
     }
@@ -76,6 +90,27 @@ public class LoginPage {
         return errorMessage.isDisplayed() &&
                 errorMessage.getText().equals("Incorrect login or password.");
     }
+
+    public boolean checkInvalidPasswordMessage(){
+        return invalidPasswordMessage.isDisplayed() &&
+               invalidPasswordMessage.getText().equals("Invalid password value");
+    }
+
+    public boolean checkEmptyFieldsErrorMessage(){
+        return emptyFieldsErrorMessage.isDisplayed() &&
+               emptyFieldsErrorMessage.getText().equals("Error. Please type your username or email.");
+    }
+
+    public boolean checkPasswordDoNotMatchErrorMessage(){
+        return passwordsDoNotMatchErrorMessage.isDisplayed() &&
+               passwordsDoNotMatchErrorMessage.getText().equals("Passwords do not match");
+    }
+
+    public boolean checkVerificationCodeMessage(){
+        return verificationCodeMessage.isDisplayed() &&
+               verificationCodeMessage.getText().equals("Check your mailbox for verification code.");
+    }
+
     public void clearFields(){
         loginField.clear();
         passwordField.clear();
