@@ -34,25 +34,25 @@ public class MainPage {
     @FindBy(xpath = "//div[@class='text-box-info left']") // !!
     private WebElement description;
 
-    @FindBy(linkText = "Onboard Employees")
+    @FindBy(xpath = "//a[@ng-href='#/onboard']")
     private WebElement onboardEmployeesBtn;
 
-    @FindBy(linkText = "Employee Participation")
+    @FindBy(xpath = "//a[@ng-href='#/participation']")
     private WebElement employeeParticipationBtn;
 
-    @FindBy(linkText = "Team Challenges")
+    @FindBy(xpath = "//a[@ng-href='#/challenges']")
     private WebElement teamChallengesBtn;
 
-    @FindBy(linkText = "Calendars")
+    @FindBy(xpath = "//a[@ng-href='#/calendars']")
     private WebElement calendarsBtn;
 
-    @FindBy(linkText = "Resources")
+    @FindBy(xpath = "//a[@ng-href='#/resources']")
     private WebElement resourceBtn;
 
-    @FindBy(linkText = "HR Users")
+    @FindBy(xpath = "//a[@ng-href='#/users']")
     private WebElement hrUsersBtn;
 
-    @FindBy(linkText = "Account settings")
+    @FindBy(xpath = "//a[@ng-href='#/account-settings']")
     private WebElement accoutSettingsBtn;
 
 
