@@ -159,6 +159,15 @@ public class LoginTestClass {
         loginPage.clickSendNewPasswordBtn();
         Assert.assertTrue(loginPage.checkVerificationCodeMessage());
     }
+    @Parameters({"login", "newPassword"})
+    @Test
+    public void sendEmptyVerificationCode(String login, String newPassword){
+        sendNewPassword(login, newPassword);
+        loginPage.clickSendCodeBtn();
+        Assert.assertTrue(loginPage.checkInvalidVerificationCodeMessage());
+    }
+
+
 
 
 

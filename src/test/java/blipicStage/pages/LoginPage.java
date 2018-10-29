@@ -73,6 +73,12 @@ public class LoginPage {
     @FindBy(xpath = "//div[@class='alert ng-scope alert-success']//span[contains(text(),'Check your mailbox for verification code.')]")
     private WebElement verificationCodeMessage;
 
+    @FindBy(xpath = "//button[contains(text(),'Send Code')]")
+    private WebElement sendCodeBtn;
+
+    @FindBy(xpath = "//div[@class='alert ng-scope alert-danger']//span[@class='ng-binding'][contains(text(),'Invalid verification code')]")
+    private WebElement invalidVerificationCodeMessage;
+
 
     public void enterLogin(String login){
         loginField.sendKeys(login);
@@ -111,6 +117,11 @@ public class LoginPage {
                verificationCodeMessage.getText().equals("Check your mailbox for verification code.");
     }
 
+    public boolean checkInvalidVerificationCodeMessage(){
+        return invalidVerificationCodeMessage.isDisplayed() &&
+               invalidVerificationCodeMessage.getText().equals("Invalid verification code");
+    }
+
     public void clearFields(){
         loginField.clear();
         passwordField.clear();
@@ -118,6 +129,10 @@ public class LoginPage {
 
     public void clickForgotPassword(){
         forgotPassLink.click();
+    }
+
+    public void clickSendCodeBtn(){
+        sendCodeBtn.click();
     }
 
     public void enterUserNameOrEmail(String login){
