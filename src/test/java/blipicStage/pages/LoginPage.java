@@ -79,6 +79,9 @@ public class LoginPage {
     @FindBy(xpath = "//div[@class='alert ng-scope alert-danger']//span[@class='ng-binding'][contains(text(),'Invalid verification code')]")
     private WebElement invalidVerificationCodeMessage;
 
+    @FindBy(xpath = "//input[@placeholder='Enter code']")
+    private WebElement verificationCodeField;
+
 
     public void enterLogin(String login){
         loginField.sendKeys(login);
@@ -153,6 +156,10 @@ public class LoginPage {
 
     public void clickSendNewPasswordBtn(){
         sendNewPasswordBtn.click();
+    }
+
+    public void enterVerificationCode(String code){
+        verificationCodeField.sendKeys(code);
     }
 
 }
