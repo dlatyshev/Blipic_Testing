@@ -176,13 +176,4 @@ public class LoginTestClass {
         Assert.assertTrue(loginPage.checkInvalidVerificationCodeMessage());
     }
 
-
-
-
-
-
-
-
-
-
 }
