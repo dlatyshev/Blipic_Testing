@@ -6,6 +6,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
@@ -174,6 +175,13 @@ public class LoginTestClass {
         loginPage.enterVerificationCode("test");
         loginPage.clickSendCodeBtn();
         Assert.assertTrue(loginPage.checkInvalidVerificationCodeMessage());
+    }
+
+    @Test(priority = 1)
+    public void sendWrongActivationCode(){
+        loginPage.enterActivationCode("test");
+        loginPage.clickCreateAccountBtn();
+        driver.findElement(By.xpath("//button[text()='Ok']")).click();
     }
 
 }
