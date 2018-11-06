@@ -14,24 +14,23 @@ public class MainPage {
         this.driver = driver;
     }
 
+
     @FindBy(linkText = "Blipic")
     private WebElement logo;
 
     @FindBy(linkText = "Logout")
     private WebElement logout;
-    /*
-    Change class names. They should not contain spaces.
-     */
+
     @FindBy(xpath = "//div[@class='text-box-info center']") // !!
-    private WebElement employeeParticipation;
+    private WebElement employeeParticipationLanding;
 
     @FindBy(xpath = "//div[@class='text-box-info left']") // !!
-    private WebElement onBoardEmployees;
+    private WebElement onBoardEmployeesLanding;
 
     @FindBy(xpath = "//div[@class='text-box-info right']") // !!
-    private WebElement calendar;
+    private WebElement createOrganizedActivityLanding;
 
-    @FindBy(xpath = "//div[@class='text-box-info left']") // !!
+    @FindBy(xpath = "//div[@class='text-box-info top']") // !!
     private WebElement description;
 
     @FindBy(xpath = "//a[@ng-href='#/onboard']")
@@ -55,9 +54,14 @@ public class MainPage {
     @FindBy(xpath = "//a[@ng-href='#/account-settings']")
     private WebElement accoutSettingsBtn;
 
+    @FindBy(id = "sidebarToggleButton")
+    private WebElement sidebarBtn;
+
+
+
 
     public boolean checkSideMenuElements(){
-        return onBoardEmployees.isDisplayed() && employeeParticipation.isDisplayed() &&
+        return onboardEmployeesBtn.isDisplayed() && employeeParticipationBtn.isDisplayed() &&
                 teamChallengesBtn.isDisplayed() && calendarsBtn.isDisplayed() &&
                 resourceBtn.isDisplayed() && hrUsersBtn.isDisplayed() &&
                 accoutSettingsBtn.isDisplayed();
@@ -75,7 +79,19 @@ public class MainPage {
     public void clickCalendarsBtn(){
         calendarsBtn.click();
     }
-
+    public void clickResourcesBtn() {resourceBtn.click();}
+    public void clickHrUsersBtn(){hrUsersBtn.click();}
+    public void clickAccountSettingsBtn(){accoutSettingsBtn.click();}
+    public void clickSidebarBtn(){sidebarBtn.click();}
+    public void clickEmployeeParticipationLanding(){
+        employeeParticipationLanding.click();
+    }
+    public void clickOnboardEmployeesLanding(){
+        onBoardEmployeesLanding.click();
+    }
+    public void clickCreateOrganizedActivityLanding(){
+        createOrganizedActivityLanding.click();
+    }
 
 
 }

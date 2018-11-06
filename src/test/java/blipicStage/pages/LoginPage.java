@@ -17,7 +17,7 @@ public class LoginPage {
     }
 
     @FindBy(xpath = "//button[@type='submit']")
-    private WebElement loginBtn;
+    private  WebElement loginBtn;
 
     @FindBy(name = "authLogin")
     private WebElement loginField;
@@ -28,7 +28,7 @@ public class LoginPage {
     @FindBy(partialLinkText = "Forgot password")
     private WebElement forgotPassLink;
 
-    @FindBy(css = "input.ng-touched:nth-child(2)")
+    @FindBy(xpath = "//input[@ng-model='activationCode']")
     private WebElement activCodeField;
 
     @FindBy(xpath = "//div[@class='alert alert-danger']//span[contains(text(),'Incorrect login or password.')]")
@@ -91,10 +91,6 @@ public class LoginPage {
         passwordField.sendKeys(password);
     }
 
-    public void clickLoginButton(){
-        loginBtn.click();
-    }
-
     public boolean checkErrorMessage(){
         return errorMessage.isDisplayed() &&
                 errorMessage.getText().equals("Incorrect login or password.");
@@ -130,12 +126,28 @@ public class LoginPage {
         passwordField.clear();
     }
 
+    public void clickLoginButton(){
+        loginBtn.click();
+    }
+
     public void clickForgotPassword(){
         forgotPassLink.click();
     }
 
     public void clickSendCodeBtn(){
         sendCodeBtn.click();
+    }
+
+    public void clickBackBtn(){
+        backBtn.click();
+    }
+
+    public void clickSendNewPasswordBtn(){
+        sendNewPasswordBtn.click();
+    }
+
+    public void clickCreateAccountBtn(){
+        createAccountBtn.click();
     }
 
     public void enterUserNameOrEmail(String login){
@@ -150,16 +162,12 @@ public class LoginPage {
         confirmNewPasswordField.sendKeys(password);
     }
 
-    public void clickBackBtn(){
-        backBtn.click();
-    }
-
-    public void clickSendNewPasswordBtn(){
-        sendNewPasswordBtn.click();
-    }
-
     public void enterVerificationCode(String code){
         verificationCodeField.sendKeys(code);
+    }
+
+    public void enterActivationCode(String code){
+        activationCodeField.sendKeys(code);
     }
 
 }

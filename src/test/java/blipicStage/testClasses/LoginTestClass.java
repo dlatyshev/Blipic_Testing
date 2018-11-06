@@ -6,6 +6,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
@@ -40,11 +41,12 @@ public class LoginTestClass {
         if((driver.getCurrentUrl().equals(LoginPage.url)) &&
             loginPage.existingAccountHeader.isDisplayed()){
             loginPage.clearFields();
-        } else if(loginPage.recoveryPasswordHeader.isDisplayed()) {
+        } else if(driver.getCurrentUrl().equals(LoginPage.url) && loginPage.recoveryPasswordHeader.isDisplayed()) {
             loginPage.clickBackBtn();
         } else{
             driver.navigate().to(LoginPage.url);
         }
+
     }
 
     @AfterClass
@@ -68,7 +70,6 @@ public class LoginTestClass {
         loginPage.clickLoginButton();
         wait.until(ExpectedConditions.urlMatches(MainPage.url));
         Assert.assertEquals(driver.getCurrentUrl(), MainPage.url);
-        driver.navigate().back();
     }
 
     @Parameters({"login", "password"})
@@ -176,13 +177,11 @@ public class LoginTestClass {
         Assert.assertTrue(loginPage.checkInvalidVerificationCodeMessage());
     }
 
-
-
-
-
-
-
-
-
+    @Test(dependsOnMethods = "sendWrongVerificationCode")
+    public void sendWrongActivationCode(){
+        loginPage.enterActivationCode("test");
+        loginPage.clickCreateAccountBtn();
+        driver.findElement(By.xpath("//button[text()='Ok']")).click();
+    }
 
 }
