@@ -41,11 +41,12 @@ public class LoginTestClass {
         if((driver.getCurrentUrl().equals(LoginPage.url)) &&
             loginPage.existingAccountHeader.isDisplayed()){
             loginPage.clearFields();
-        } else if(loginPage.recoveryPasswordHeader.isDisplayed()) {
+        } else if(driver.getCurrentUrl().equals(LoginPage.url) && loginPage.recoveryPasswordHeader.isDisplayed()) {
             loginPage.clickBackBtn();
         } else{
             driver.navigate().to(LoginPage.url);
         }
+
     }
 
     @AfterClass
@@ -176,7 +177,7 @@ public class LoginTestClass {
         Assert.assertTrue(loginPage.checkInvalidVerificationCodeMessage());
     }
 
-    @Test(priority = 1)
+    @Test(dependsOnMethods = "sendWrongVerificationCode")
     public void sendWrongActivationCode(){
         loginPage.enterActivationCode("test");
         loginPage.clickCreateAccountBtn();
