@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1f3a2160-f91a-42c9-8fac-0176b3463e92" name="Default Changelist" comment="New test methods">
+    <list default="true" id="1f3a2160-f91a-42c9-8fac-0176b3463e92" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/blipicStage/testClasses/LoginTestClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/blipicStage/testClasses/LoginTestClass.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/blipicStage/pages/MainPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/blipicStage/pages/MainPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/blipicStage/pages/LoginPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/blipicStage/pages/LoginPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/blipicStage/testClasses/LoginTestClass.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/blipicStage/testClasses/LoginTestClass.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -81,25 +82,27 @@
     <session id="1578376771">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="7" />
+          <entry key="project.closed" value="9" />
           <entry key="project.open.time.1" value="2" />
           <entry key="project.open.time.10" value="2" />
           <entry key="project.open.time.11" value="1" />
           <entry key="project.open.time.14" value="1" />
           <entry key="project.open.time.17" value="1" />
           <entry key="project.open.time.2" value="1" />
-          <entry key="project.opened" value="8" />
+          <entry key="project.open.time.20" value="1" />
+          <entry key="project.open.time.3" value="1" />
+          <entry key="project.opened" value="10" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="5051" />
+          <entry key="java" value="5053" />
           <entry key="xml" value="50" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="5051" />
+          <entry key="JAVA" value="5053" />
           <entry key="XML" value="50" />
         </counts>
       </usages-collector>
@@ -128,17 +131,16 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/blipicStage/pages/LoginPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="147" lean-forward="true" selection-start-line="147" selection-end-line="147" />
+            <state relative-caret-position="1725">
+              <caret line="147" selection-start-line="147" selection-end-line="147" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#3614#3779#0" />
-                <element signature="method#checkInvalidPasswordMessage#0;class#LoginPage#0" />
-                <element signature="method#checkEmptyFieldsErrorMessage#0;class#LoginPage#0" />
-                <element signature="method#checkPasswordDoNotMatchErrorMessage#0;class#LoginPage#0" />
-                <element signature="method#checkVerificationCodeMessage#0;class#LoginPage#0" />
-                <element signature="method#checkInvalidVerificationCodeMessage#0;class#LoginPage#0" />
-                <element signature="method#clearFields#0;class#LoginPage#0" />
+                <element signature="e#3493#3681#0" />
+                <element signature="e#3687#3898#0" />
+                <element signature="e#3904#4118#0" />
+                <element signature="e#4124#4334#0" />
+                <element signature="e#4340#4555#0" />
+                <element signature="e#4561#4652#0" />
               </folding>
             </state>
           </provider>
@@ -147,8 +149,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/blipicStage/pages/OnboardPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+            <state relative-caret-position="60">
+              <caret line="4" selection-start-line="4" selection-end-line="4" />
             </state>
           </provider>
         </entry>
@@ -156,7 +158,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/blipicStage/pages/MainPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
+            <state relative-caret-position="90">
               <caret line="9" column="4" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
               <folding>
                 <element signature="method#checkSideMenuElements#0;class#MainPage#0" />
@@ -168,8 +170,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/blipicStage/testClasses/LoginTestClass.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="481">
-              <caret line="184" column="5" lean-forward="true" selection-start-line="184" selection-start-column="5" selection-end-line="184" selection-end-column="5" />
+            <state relative-caret-position="360">
+              <caret line="60" column="5" lean-forward="true" selection-start-line="60" selection-start-column="5" selection-end-line="60" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -248,10 +250,10 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-17" />
-    <option name="y" value="39" />
-    <option name="width" value="1849" />
-    <option name="height" value="1032" />
+    <option name="x" value="1985" />
+    <option name="y" value="-4" />
+    <option name="width" value="1855" />
+    <option name="height" value="1084" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -379,67 +381,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="BlipicTest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="BlipicTest" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="BlipicTest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="BlipicTest" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="BlipicTest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="BlipicTest" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="BlipicTest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="BlipicTest" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="BlipicTest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="BlipicTest" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="BlipicTest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="BlipicTest" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="blipicStage" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="BlipicTest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="BlipicTest" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="blipicStage" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="BlipicTest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="BlipicTest" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="blipicStage" type="462c0819:PsiDirectoryNode" />
-              <item name="testClasses" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
       <pane id="Scope">
         <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
           <expand>
@@ -501,13 +442,74 @@
         </subPane>
       </pane>
       <pane id="PackagesPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="BlipicTest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BlipicTest" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="BlipicTest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BlipicTest" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="BlipicTest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BlipicTest" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="BlipicTest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BlipicTest" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="BlipicTest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BlipicTest" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="BlipicTest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BlipicTest" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="blipicStage" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="BlipicTest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BlipicTest" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="blipicStage" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="BlipicTest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BlipicTest" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="blipicStage" type="462c0819:PsiDirectoryNode" />
+              <item name="testClasses" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file:///home/dmytroqa/IdeaProjects/edu/UkrNetTest/pom.xml" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541003039700" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541510176258" />
     <property name="last_opened_file_path" value="/usr/lib/jvm/java-8-openjdk-amd64" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -609,7 +611,9 @@
       <option name="presentableId" value="Default" />
       <updated>1540220202217</updated>
       <workItem from="1540909922395" duration="889000" />
-      <workItem from="1540997196600" duration="5837000" />
+      <workItem from="1540997196600" duration="5886000" />
+      <workItem from="1541068153561" duration="19000" />
+      <workItem from="1541509934200" duration="239000" />
     </task>
     <task id="LOCAL-00001" summary="Hello">
       <created>1540394230839</created>
@@ -688,13 +692,17 @@
       <option name="project" value="LOCAL" />
       <updated>1541001954586</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="New test methods">
+      <created>1541003068889</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1541003068889</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="LoginPageTesting - 2018.10.29 at 18h 57m 00s.xml">
-      <configuration name="LoginPageTesting" configurationId="TestNG" />
-    </history-entry>
     <history-entry file="LoginPageTesting - 2018.10.30 at 16h 32m 53s.xml">
       <configuration name="LoginPageTesting" configurationId="TestNG" />
     </history-entry>
@@ -722,9 +730,12 @@
     <history-entry file="LoginPageTesting - 2018.10.31 at 18h 21m 33s.xml">
       <configuration name="LoginPageTesting" configurationId="TestNG" />
     </history-entry>
+    <history-entry file="LoginPageTesting - 2018.10.31 at 18h 24m 20s.xml">
+      <configuration name="LoginPageTesting" configurationId="TestNG" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6726000" />
+    <option name="totallyTimeSpent" value="7037000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -736,10 +747,9 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="65" y="-4" width="1855" height="1084" extended-state="6" />
-    <editor active="true" />
+    <frame x="1985" y="-4" width="1855" height="1084" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18573798" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1901603" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -748,7 +758,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32985386" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.22594142" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.22594142" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39958158" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -949,23 +959,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/config.properties">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Clicker.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/blipicStage/pages/Clicker.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/config.properties" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/Clicker.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/blipicStage/pages/Clicker.java" />
     <entry file="file://$PROJECT_DIR$/src/test/java/blipicStage/testClasses/MainPageTestClass.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -987,9 +983,32 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/blipicStage/pages/LoginPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1725">
+          <caret line="147" selection-start-line="147" selection-end-line="147" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#3493#3681#0" />
+            <element signature="e#3687#3898#0" />
+            <element signature="e#3904#4118#0" />
+            <element signature="e#4124#4334#0" />
+            <element signature="e#4340#4555#0" />
+            <element signature="e#4561#4652#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/blipicStage/pages/OnboardPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/blipicStage/pages/MainPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
+        <state relative-caret-position="90">
           <caret line="9" column="4" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
           <folding>
             <element signature="method#checkSideMenuElements#0;class#MainPage#0" />
@@ -997,34 +1016,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/blipicStage/pages/OnboardPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/blipicStage/pages/LoginPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="147" lean-forward="true" selection-start-line="147" selection-end-line="147" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#3614#3779#0" />
-            <element signature="method#checkInvalidPasswordMessage#0;class#LoginPage#0" />
-            <element signature="method#checkEmptyFieldsErrorMessage#0;class#LoginPage#0" />
-            <element signature="method#checkPasswordDoNotMatchErrorMessage#0;class#LoginPage#0" />
-            <element signature="method#checkVerificationCodeMessage#0;class#LoginPage#0" />
-            <element signature="method#checkInvalidVerificationCodeMessage#0;class#LoginPage#0" />
-            <element signature="method#clearFields#0;class#LoginPage#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/blipicStage/testClasses/LoginTestClass.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="481">
-          <caret line="184" column="5" lean-forward="true" selection-start-line="184" selection-start-column="5" selection-end-line="184" selection-end-column="5" />
+        <state relative-caret-position="360">
+          <caret line="60" column="5" lean-forward="true" selection-start-line="60" selection-start-column="5" selection-end-line="60" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

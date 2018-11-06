@@ -69,7 +69,6 @@ public class LoginTestClass {
         loginPage.clickLoginButton();
         wait.until(ExpectedConditions.urlMatches(MainPage.url));
         Assert.assertEquals(driver.getCurrentUrl(), MainPage.url);
-        driver.navigate().back();
     }
 
     @Parameters({"login", "password"})
